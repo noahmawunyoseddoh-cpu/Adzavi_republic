@@ -33,7 +33,7 @@ export default function ProductDetail() {
   return (
     <div className="container product-page">
       <div className="product-image">
-        <img src={product.images[0]} alt={product.name} />
+        <img src alt={product.name} />
       </div>
 
       <div className="product-details">
