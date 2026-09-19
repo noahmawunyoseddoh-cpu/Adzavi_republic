@@ -1,0 +1,36 @@
+.pcard {
+  display: block;
+}
+
+.pcard-image {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--paper-light);
+}
+
+.pcard-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.pcard:hover .pcard-image img {
+  transform: scale(1.04);
+}
+
+.pcard-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  font-size: 0.92rem;
+}
+
+.pcard-name {
+  max-width: 70%;
+}
+
+.pcard-price {
+  color: var(--brick);
+  font-weight: 500;
+}

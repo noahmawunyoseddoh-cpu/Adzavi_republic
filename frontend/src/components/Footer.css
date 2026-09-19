@@ -1,0 +1,82 @@
+.footer {
+  background: var(--footer-bg);
+  color: var(--ink);
+  margin-top: 90x;
+  border-top: 1px solid var(--line);
+  padding-top: 30px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  padding: 150px 24px 32px;
+  padding-bottom: 90px;
+  margin-bottom: 90px;
+}
+.footer-mark {
+  font-family: "Permanent Marker", cursive;
+  color: var(--ink);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.footer-tag {
+  color: rgba(242, 238, 228, 0.6);
+  max-width: 280px;
+  margin-top: 10px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-heading {
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.footer-col a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(242, 238, 228, 0.85);
+  font-size: 0.92rem;
+}
+
+.footer-col a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(242, 238, 228, 0.15);
+  padding: 18px 24px;
+  font-size: 0.8rem;
+  color: rgba(242, 238, 228, 0.5);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25d366;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+@media (max-width: 720px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
